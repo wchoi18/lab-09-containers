@@ -1,12 +1,17 @@
 [project]
 name = "book-analysis"
 version = "0.1.0"
-description = "Lab 09: package the Lab 07 book analysis as a container image"
+description = "Lab 07: analyze the Lab 06 books on Amazon EC2 and AWS Lambda"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "boto3",
     "pymongo>=4.19.0",
+]
+
+[dependency-groups]
+dev = [
+    "chalice",
 ]
 
 [build-system]
